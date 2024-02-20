@@ -1332,6 +1332,7 @@ footer {
 	width: 30px;
 	height: 30px;
 	right: 0;
+	cursor: pointer;
 }
 
 @media (max-width: 1247px) {
