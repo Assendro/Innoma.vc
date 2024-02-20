@@ -1467,6 +1467,7 @@ footer {
 	.for-who__content {
 		margin: 35px 0 100px;
 		flex-wrap: wrap;
+		justify-content: center;
 	}
 
 	.numbered-square {
@@ -2116,6 +2117,8 @@ footer {
 	.numbered-square_about-akselerator {
 		flex-direction: row;
 		justify-content: space-around;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	.numbered-square__img {
 		margin: 0;
