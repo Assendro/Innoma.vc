@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INNOMA.VC</title>
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;800&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="./css/style.css">
+    
+</head>
+<body>
+    <div class="login-form__container">
+        <div class="login-form">
+            <h4 class="login-form__header">Вход</h4>
+            <input type="text" class="login-form__input" placeholder="E-маил">
+            <input type="text" class="login-form__input" placeholder="Пароль">
+            <button class="button__login-form">Войти</button>
+            <a href="" class="login-form__registration">Зарегистрироваться</a>
+            <svg class="login-form__close" onclick="openOrCloseLogin()" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                <path d="M20 1L1 20" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M1 1L20 20" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                
+            </svg>
+        </div>
+    </div>
+    <div class="wrapper">
+        <header class="header">
+            
+            <div class="header__shadow" onclick="showOrHideMenu()"></div>
+            <div class="header__container">
+                <a href="" class="header__logo">INNOMA<strong class="header__logo_blue">.VC</strong></a>
+                <nav id='1' class="header__menu menu">
+                    <ul class="menu__list">
+                        <li class="menu__item"><a href="" class="menu__link">Кто мы?</a></li>
+                        <li class="menu__item"><a href="" class="menu__link">Услуги</a></li>
+                        <li class="menu__item"><a href="" class="menu__link">Акселератор</a></li>
+                        <li class="menu__item last-item"><a href="" class="menu__link">Новости</a></li>
+                    </ul>
+                </nav>
+                <div class="header__button">
+                    <button class="button_header" onclick="openOrCloseLogin()">Войти</button>
+                    <button href="" class="menu__burger" onclick="showOrHideMenu()">
+                        <div class="menu__burger_line "></div>
+                        <div class="menu__burger_line burger-short-line"></div>
+                        <div class="menu__burger_line "></div>
+                        <div class="menu__burger_line burger-short-line"></div>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            
+            <article class="hook">
+                <div class="shadow_06"></div>
+                <div class="hook__container">              
+                    <div class="hook__content">
+                        <div class="block-hook">
+                            <h1 class="block-hook__header">
+                                ЗАПУСТИТЕ  <br>
+                                <strong class="hook__highlight highlight">ТЕХНОЛОГИЧЕСКИЙ БИЗНЕС </strong> <br>
+                                <strong class="hook__highlight highlight" style="display: none;">БИЗНЕС </strong> <br id="2" style="display: none;" >
+                                НА МЕЖДУНАРОДНЫХ РЫНКАХ
+                            </h1>
+                            <div class="block-hook__text">
+                                Открыт набор заявок на акселератор
+                            </div>
+                            <button class="button_hook button_blue" onclick="openOrCloseLogin()">Подать заявку</button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="services">
+                <div class="services__container">
+                    <h2 class="services__header">
+                        Наши услуги
+                    </h2>
+                    <div class="services__content">
+                        <div class="block-services_top">
+
+                            <div class="services-text">
+                                <h3 class="services-text__header">
+                                    Аналитические исследования
+                                </h3>
+                                <p class="services-text__paragraph">
+                                    Одним из наших ключевых направлений является анализ технологических трендов на международных рынках.
+                                    Мы проводим анализ на основе публичных исследований McKinsey, BCG, PWC, Deloitte, Accenture, BCG, EY,  Crunchbase, Dealroom, F6S, PitchBook а также агрегируем и анализируем данные из открытых международных источников патенты, медиа, научные публикации
+                                </p>
+                                <button class="button_services">
+                                    Узнать подробнее
+                                </button>
+                            </div>
+                            <img src="./img/services-image-1.png" alt="" class="services__image_1">
+                        </div>
+                        <div class="block-services_bottom">
+
+                        <div class="services-text">
+                            <h3 class="services-text__header">
+                                Онлайн акселератор для IT бизнеса
+                            </h3>
+                            <p class="services-text__paragraph">
+                                Онлайн программа аскелерации IT бизнеса позволит вашей команде открыть новые горизонты и возможности для бизнеса на глобальных рынках. В результате программы вы получите возможность презентовать свой проект для международных инвесторов и локальных партнеров                            </p>
+                            <button class="button_services">
+                                Узнать подробнее
+                            </button>
+                        </div>
+                        <img src="./img/services-image-2.png" alt="" class="services__image_2">
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="for-who">
+                <div class="for-who__container">
+                    <h2 class="for-who__header">
+                        Для кого мы?
+                    </h2>
+                    <div class="for-who__content">
+                        <div class="numbered-square">
+                            <div class="numbered-square__number">01</div>
+                            <h4>IT проекты на стадии идеи</h4>
+                            <p class="numbered-square__text">
+                                Для стартапов, которые планируют привлечь международные инвестиции, протестировать спрос и запустить продукт
+                            </p>
+                        </div>
+                        <div class="numbered-square">
+                            <div class="numbered-square__number">02</div>
+                            <h4>Инновационный бизнес</h4>
+                            <p class="numbered-square__text">
+                                Для уже работающего технологического бизнес, позволим найти новые международне рынки сбыта, масштабировать бизнес
+                            </p>
+                        </div>
+                        <div class="numbered-square numbered-square_03">
+                            <div class="numbered-square__number">03</div>
+                            <h4>Корпорации</h4>
+                            <p class="numbered-square__text">
+                                Для уже работающего технологического бизнес, позволим найти новые международне рынки сбыта, масштабировать бизнес
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="learn-to">
+                <div class="shadow_055"></div>
+                <div class="learn-to__container">
+                    <div class="learn-to__content">
+                        <div class="learn-to__highlight-container">
+                            <div class="learn-to__highlight highlight">
+                                
+                                НАУЧИТЕСЬ ИССЛЕДОВАТЬ ИНОСТРАННЫЕ РЫНКИ <br> И ОТКРОЙТЕ НОВЫЕ ВОЗМОЖНОСТИ ДЛЯ СВОЕГО БИЗНЕСА
+
+                            </div>
+                        </div>
+                        <p class="learn-to__text">
+                            Наша команда поможет вам изучить рынки Ближнего Востока, Азии, Латинской Америки и Африки
+                        </p>
+                        <button class="button_learn-to button_blue" onclick="openOrCloseLogin()">Получить консультацию</button>
+                    </div>
+                </div>
+            </article>
+            <article class="our-markets">
+                <div class="our-markets__container">
+                    <div class="our-markets__content">
+                        <h2 class="our-markets__header">
+                            С какими рынками мы работаем?
+                        </h2>
+                        <div class="map__navigation">
+                            <button class="map__item_chosen" onclick="changeChosenItem(0)">Ближний восток</button>
+                            <button class="map__item" onclick="changeChosenItem(1)">Азия</button>
+                            <button class="map__item" onclick="changeChosenItem(2)">Латинская Америка</button>
+                            <button class="map__item" onclick="changeChosenItem(3)">Африка</button>
+                        </div>
+                        <div class="area-info">
+                            <div class="area-info_left">
+                                <h5 class="area-info__header">ЧЕМ ИНТЕРЕСЕН <br>
+                                    <strong class="area-info__strong">РЫНОК MENA:</strong>
+                                </h5>
+                                <p class="area-info__countries">
+                                    ОАЭ, Саудовская Аравия,<br>
+                                    Израиль, Оман, Бахрейн, Катар,<br>
+                                    Тунис, Йемен, Египет, Алжир
+                                </p>
+                                <div class="manager-presentation">
+                                    <img src="./img/manager.png" alt="" class="manager-presentation__img">
+                                    <div class="manager-presentation__info">
+                                        <div class="manager-presentation__name">
+                                            Фатима 
+                                        </div>
+                                        <div class="manager-presentation__description">
+                                            Менеджер по MENA 
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <button class="button_area-info button_blue" onclick="openOrCloseLogin()">
+                                    Выйти на рынок
+                                </button>
+                            </div>
+                            <div class="area-info_right">
+                                <div class="numbered-square_small">
+                                    <div class="numbered-square__number_small">
+                                        >5,5 <small class="numbered-square__number_unit">Млрд</small>
+                                    </div>
+                                    <p class="numbered-square__text_small">
+                                        Инвестиции pre-seed, seed
+                                    </p>
+                                </div>
+                                <div class="numbered-square_small">
+                                    <div class="numbered-square__number_small">
+                                        >300
+                                    </div>
+                                    <p class="numbered-square__text_small">
+                                        Акселераторов, инкубаторов
+                                    </p>
+                                </div>
+                                <div class="numbered-square_small">
+                                    <div class="numbered-square__number_small">
+                                        73
+                                    </div>
+                                    <p class="numbered-square__text_small">
+                                        Венчурных фонда
+                                    </p>
+                                </div>
+                                <form action="https://docs.google.com/document/d/1e3jZf9fUM3YkyDgUf-hhxYqJilzAFJWeeIqknjogyH0/edit?usp=sharing" target="_blank">
+                                    <button class="download-report button_download">
+                                        <img src="./img/arrow-download.svg" alt="" class="download-report__img">
+                                        <div class="download-report__text">
+                                            Скачать отчет <br>по рынку MENA
+                                        </div>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </article>
+            <article class="about-akselerator">
+                <div class="about-akselerator__container">
+                    <div class="about-akselerator__content">
+                        <h2 class="about-akselerator__header">
+                            Об акселераторе IT бизнеса
+                        </h2>
+                        <p class="about-akselerator__text">
+                            Программа акселератора расчитана на 8 недель интенсивного онлайн  курса с вебинарами приглашенных экспертов по международным рынкам, разборами ваших идей и проектов 
+                        </p>
+                        <div class="about-akselerator__squares-container">
+                            <div class="numbered-square numbered-square_about-akselerator">
+                                <img src="./img/3.png" alt="" class="numbered-square__img">
+                                <h4 class="numbered-square__text_akselerator">Месяца обучения</h4>
+                            </div>
+                            <div class="numbered-square numbered-square_about-akselerator">
+                                <img src="./img/earth.png" alt="" class="numbered-square__img">
+                                <h4 class="numbered-square__text_akselerator">Приглашенные эксперты</h4>
+                            </div>
+                            <div class="numbered-square numbered-square_about-akselerator">
+                                <img src="./img/human-time.png" alt="" class="numbered-square__img">
+                                <h4 class="numbered-square__text_akselerator">Персональный менеджер</h4>
+                            </div>
+                        </div>
+                        <div class="video__content" onmouseup="playStopVideo(0, 'video-player__background')">
+                            <video poster="./img/poster.png" class="about-akselerator__video" loop="loop">
+                                <source src="./video/1.webm" type="video/webm">
+                                <source src="./video/1.mp4" type="video/mp4">
+                            </video>
+
+                            <div class="video-player__background">
+                                <p class="video-player__text">
+                                    Об акселерационной программе
+                                </p>
+                                <button class="video-player__button">
+                                    <svg width="115" height="115" viewBox="0 0 116 113" fill="none">
+                                        <ellipse cx="57.8932" cy="56.5" rx="57.2533" ry="56.5" fill="#4C8EF0"/>
+                                        <path d="M78.2444 52.1555C81.6108 54.0735 81.6108 58.9261 78.2444 60.8441L51.3805 76.15C48.0472 78.0491 43.9053 75.6419 43.9053 71.8056L43.9053 41.194C43.9053 37.3577 48.0472 34.9505 51.3805 36.8496L78.2444 52.1555Z" fill="white"/>
+                                        </svg>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="akselerator-programm">
+                <div class="akselerator-programm__container">
+                    <div class="akselerator-programm__content">
+                        <h2 class="akselerator-programm__header">
+                            Программа акселератора
+                        </h2>
+                        <div class="akselerator-programm__modules">
+                            <div class="module__container">
+                                <div class="module">
+                                    <div class="module__header">
+                                        Модуль 1
+                                    </div>
+                                    <p class="module__name">
+                                        Тенденции и тренды современного мира
+                                    </p>
+                                    <button class="button__array" onclick="openThemes(0)">
+                                        <svg class="array_up" xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39" fill="none">
+                                            <ellipse cx="19.5" cy="19.5" rx="19.5" ry="19.5" transform="rotate(-180 19.5 19.5)" fill="#2A79C2"/>
+                                            <path d="M20.7071 15.2929C20.3166 14.9024 19.6834 14.9024 19.2929 15.2929L12.9289 21.6569C12.5384 22.0474 12.5384 22.6805 12.9289 23.0711C13.3195 23.4616 13.9526 23.4616 14.3431 23.0711L20 17.4142L25.6569 23.0711C26.0474 23.4616 26.6805 23.4616 27.0711 23.0711C27.4616 22.6805 27.4616 22.0474 27.0711 21.6569L20.7071 15.2929ZM21 17L21 16L19 16L19 17L21 17Z" fill="white"/>
+                                        </svg>
+                                        <svg class="array_down" xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39" fill="none">
+                                            <ellipse cx="19.5" cy="19.5" rx="19.5" ry="19.5" fill="#2A79C2"/>
+                                            <path d="M18.2929 23.7071C18.6834 24.0976 19.3166 24.0976 19.7071 23.7071L26.0711 17.3431C26.4616 16.9526 26.4616 16.3195 26.0711 15.9289C25.6805 15.5384 25.0474 15.5384 24.6568 15.9289L19 21.5858L13.3431 15.9289C12.9526 15.5384 12.3194 15.5384 11.9289 15.9289C11.5384 16.3195 11.5384 16.9526 11.9289 17.3431L18.2929 23.7071ZM18 22L18 23L20 23L20 22L18 22Z" fill="white"/>
+                                            </svg>
+                                    </button>
+                                </div>
+                                <div class="theme">
+                                    <p class="theme__text">
+                                        Тема 1. Куда движутся IT тренды? Аналитика Gartner, разбор отчетов консалтинговых компаний
+                                    </p>
+                                </div>
+                                <div class="theme">
+                                    <p class="theme__text">
+                                        Тема 2. Рынки Ближнего Востока, Азии, Латинской АмерикиТема                                    </p>
+                                </div>
+                                <div class="theme">
+                                    <p class="theme__text">
+                                        3. Что такое внутренние и внешние инновации? Как искать инновационные идеи?                                    </p>
+                                </div>
+                                <div class="theme">
+                                    <a href="" class="theme__text">9 видео роликов, вебинар с приглашенным экспертом</a>
+                                </div>
+                            </div>
+                            <div class="module__container">
+                                <div class="module">
+                                    <div class="module__header">
+                                        Модуль 2
+                                    </div>
+                                    <p class="module__name">
+                                        Стартап подход к созданию международного IT продукта
+                                    </p>
+                                    <button class="button__array" onclick="openThemes(1)">
+                                        <svg class="array_up" xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39" fill="none">
+                                            <ellipse cx="19.5" cy="19.5" rx="19.5" ry="19.5" transform="rotate(-180 19.5 19.5)" fill="#2A79C2"/>
+                                            <path d="M20.7071 15.2929C20.3166 14.9024 19.6834 14.9024 19.2929 15.2929L12.9289 21.6569C12.5384 22.0474 12.5384 22.6805 12.9289 23.0711C13.3195 23.4616 13.9526 23.4616 14.3431 23.0711L20 17.4142L25.6569 23.0711C26.0474 23.4616 26.6805 23.4616 27.0711 23.0711C27.4616 22.6805 27.4616 22.0474 27.0711 21.6569L20.7071 15.2929ZM21 17L21 16L19 16L19 17L21 17Z" fill="white"/>
+                                        </svg>
+                                        <svg class="array_down" xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39" fill="none">
+                                            <ellipse cx="19.5" cy="19.5" rx="19.5" ry="19.5" fill="#2A79C2"/>
+                                            <path d="M18.2929 23.7071C18.6834 24.0976 19.3166 24.0976 19.7071 23.7071L26.0711 17.3431C26.4616 16.9526 26.4616 16.3195 26.0711 15.9289C25.6805 15.5384 25.0474 15.5384 24.6568 15.9289L19 21.5858L13.3431 15.9289C12.9526 15.5384 12.3194 15.5384 11.9289 15.9289C11.5384 16.3195 11.5384 16.9526 11.9289 17.3431L18.2929 23.7071ZM18 22L18 23L20 23L20 22L18 22Z" fill="white"/>
+                                            </svg>
+                                    </button>
+                                </div>
+                                <div class="theme">
+                                    <p class="theme__text">
+                                        Тема 1. Куда движутся IT тренды? Аналитика Gartner, разбор отчетов консалтинговых компаний
+                                    </p>
+                                </div>
+                                <div class="theme">
+                                    <p class="theme__text">
+                                        Тема 2. Рынки Ближнего Востока, Азии, Латинской АмерикиТема                                    </p>
+                                </div>
+                                <div class="theme">
+                                    <p class="theme__text">
+                                        3. Что такое внутренние и внешние инновации? Как искать инновационные идеи?                                    </p>
+                                </div>
+                                <div class="theme">
+                                    <a href="" class="theme__text">9 видео роликов, вебинар с приглашенным экспертом</a>
+                                </div>
+                            </div>
+                            <div class="module__container">
+                                <div class="module">
+                                    <div class="module__header">
+                                        Модуль 3
+                                    </div>
+                                    <p class="module__name">
+                                        Бизнес моделирование и поиск Product Market Fit
+                                    </p>
+                                    <button class="button__array" onclick="openThemes(2)">
+                                        <svg class="array_up" xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39" fill="none">
+                                            <ellipse cx="19.5" cy="19.5" rx="19.5" ry="19.5" transform="rotate(-180 19.5 19.5)" fill="#2A79C2"/>
+                                            <path d="M20.7071 15.2929C20.3166 14.9024 19.6834 14.9024 19.2929 15.2929L12.9289 21.6569C12.5384 22.0474 12.5384 22.6805 12.9289 23.0711C13.3195 23.4616 13.9526 23.4616 14.3431 23.0711L20 17.4142L25.6569 23.0711C26.0474 23.4616 26.6805 23.4616 27.0711 23.0711C27.4616 22.6805 27.4616 22.0474 27.0711 21.6569L20.7071 15.2929ZM21 17L21 16L19 16L19 17L21 17Z" fill="white"/>
+                                        </svg>
+                                        <svg class="array_down" xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39" fill="none">
+                                            <ellipse cx="19.5" cy="19.5" rx="19.5" ry="19.5" fill="#2A79C2"/>
+                                            <path d="M18.2929 23.7071C18.6834 24.0976 19.3166 24.0976 19.7071 23.7071L26.0711 17.3431C26.4616 16.9526 26.4616 16.3195 26.0711 15.9289C25.6805 15.5384 25.0474 15.5384 24.6568 15.9289L19 21.5858L13.3431 15.9289C12.9526 15.5384 12.3194 15.5384 11.9289 15.9289C11.5384 16.3195 11.5384 16.9526 11.9289 17.3431L18.2929 23.7071ZM18 22L18 23L20 23L20 22L18 22Z" fill="white"/>
+                                            </svg>
+                                    </button>
+                                </div>
+                                <div class="theme">
+                                    <p class="theme__text">
+                                        Тема 1. Куда движутся IT тренды? Аналитика Gartner, разбор отчетов консалтинговых компаний
+                                    </p>
+                                </div>
+                                <div class="theme">
+                                    <p class="theme__text">
+                                        Тема 2. Рынки Ближнего Востока, Азии, Латинской АмерикиТема                                    </p>
+                                </div>
+                                <div class="theme">
+                                    <p class="theme__text">
+                                        3. Что такое внутренние и внешние инновации? Как искать инновационные идеи?                                    </p>
+                                </div>
+                                <div class="theme">
+                                    <a href="" class="theme__text">9 видео роликов, вебинар с приглашенным экспертом</a>
+                                </div>
+                            </div>
+                            <div class="module__container">
+                                <div class="module">
+                                    <div class="module__header">
+                                        Модуль 4
+                                    </div>
+                                    <p class="module__name">
+                                        Определение рынка, поиск и исследование Целевой аудитории
+                                    </p>
+                                    <button class="button__array" onclick="openThemes(3)">
+                                        <svg class="array_up" xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39" fill="none">
+                                            <ellipse cx="19.5" cy="19.5" rx="19.5" ry="19.5" transform="rotate(-180 19.5 19.5)" fill="#2A79C2"/>
+                                            <path d="M20.7071 15.2929C20.3166 14.9024 19.6834 14.9024 19.2929 15.2929L12.9289 21.6569C12.5384 22.0474 12.5384 22.6805 12.9289 23.0711C13.3195 23.4616 13.9526 23.4616 14.3431 23.0711L20 17.4142L25.6569 23.0711C26.0474 23.4616 26.6805 23.4616 27.0711 23.0711C27.4616 22.6805 27.4616 22.0474 27.0711 21.6569L20.7071 15.2929ZM21 17L21 16L19 16L19 17L21 17Z" fill="white"/>
+                                        </svg>
+                                        <svg class="array_down" xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39" fill="none">
+                                            <ellipse cx="19.5" cy="19.5" rx="19.5" ry="19.5" fill="#2A79C2"/>
+                                            <path d="M18.2929 23.7071C18.6834 24.0976 19.3166 24.0976 19.7071 23.7071L26.0711 17.3431C26.4616 16.9526 26.4616 16.3195 26.0711 15.9289C25.6805 15.5384 25.0474 15.5384 24.6568 15.9289L19 21.5858L13.3431 15.9289C12.9526 15.5384 12.3194 15.5384 11.9289 15.9289C11.5384 16.3195 11.5384 16.9526 11.9289 17.3431L18.2929 23.7071ZM18 22L18 23L20 23L20 22L18 22Z" fill="white"/>
+                                            </svg>
+                                    </button>
+                                </div>
+                                <div class="theme">
+                                    <p class="theme__text">
+                                        Тема 1. Куда движутся IT тренды? Аналитика Gartner, разбор отчетов консалтинговых компаний
+                                    </p>
+                                </div>
+                                <div class="theme">
+                                    <p class="theme__text">
+                                        Тема 2. Рынки Ближнего Востока, Азии, Латинской АмерикиТема                                    </p>
+                                </div>
+                                <div class="theme">
+                                    <p class="theme__text">
+                                        3. Что такое внутренние и внешние инновации? Как искать инновационные идеи?                                    </p>
+                                </div>
+                                <div class="theme">
+                                    <a href="" class="theme__text">9 видео роликов, вебинар с приглашенным экспертом</a>
+                                </div>
+                            </div>
+                            <div class="module__container">
+                                <div class="module">
+                                    <div class="module__header">
+                                        Модуль 5
+                                    </div>
+                                    <p class="module__name">
+                                        Что такое MVP и почему это важно
+                                    </p>
+                                    <button class="button__array" onclick="openThemes(4)">
+                                        <svg class="array_up" xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39" fill="none">
+                                            <ellipse cx="19.5" cy="19.5" rx="19.5" ry="19.5" transform="rotate(-180 19.5 19.5)" fill="#2A79C2"/>
+                                            <path d="M20.7071 15.2929C20.3166 14.9024 19.6834 14.9024 19.2929 15.2929L12.9289 21.6569C12.5384 22.0474 12.5384 22.6805 12.9289 23.0711C13.3195 23.4616 13.9526 23.4616 14.3431 23.0711L20 17.4142L25.6569 23.0711C26.0474 23.4616 26.6805 23.4616 27.0711 23.0711C27.4616 22.6805 27.4616 22.0474 27.0711 21.6569L20.7071 15.2929ZM21 17L21 16L19 16L19 17L21 17Z" fill="white"/>
+                                        </svg>
+                                        <svg class="array_down" xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39" fill="none">
+                                            <ellipse cx="19.5" cy="19.5" rx="19.5" ry="19.5" fill="#2A79C2"/>
+                                            <path d="M18.2929 23.7071C18.6834 24.0976 19.3166 24.0976 19.7071 23.7071L26.0711 17.3431C26.4616 16.9526 26.4616 16.3195 26.0711 15.9289C25.6805 15.5384 25.0474 15.5384 24.6568 15.9289L19 21.5858L13.3431 15.9289C12.9526 15.5384 12.3194 15.5384 11.9289 15.9289C11.5384 16.3195 11.5384 16.9526 11.9289 17.3431L18.2929 23.7071ZM18 22L18 23L20 23L20 22L18 22Z" fill="white"/>
+                                            </svg>
+                                    </button>
+                                </div>
+                                <div class="theme">
+                                    <p class="theme__text">
+                                        Тема 1. Куда движутся IT тренды? Аналитика Gartner, разбор отчетов консалтинговых компаний
+                                    </p>
+                                </div>
+                                <div class="theme">
+                                    <p class="theme__text">
+                                        Тема 2. Рынки Ближнего Востока, Азии, Латинской АмерикиТема                                    </p>
+                                </div>
+                                <div class="theme">
+                                    <p class="theme__text">
+                                        3. Что такое внутренние и внешние инновации? Как искать инновационные идеи?                                    </p>
+                                </div>
+                                <div class="theme">
+                                    <a href="" class="theme__text">9 видео роликов, вебинар с приглашенным экспертом</a>
+                                </div>
+                            </div>
+                            <div class="module__container">
+                                <div class="module">
+                                    <div class="module__header">
+                                        Модуль 6
+                                    </div>
+                                    <p class="module__name">
+                                        Unit экономика и финансовое моделирование
+                                    </p>
+                                    <button class="button__array" onclick="openThemes(5)">
+                                        <svg class="array_up" xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39" fill="none">
+                                            <ellipse cx="19.5" cy="19.5" rx="19.5" ry="19.5" transform="rotate(-180 19.5 19.5)" fill="#2A79C2"/>
+                                            <path d="M20.7071 15.2929C20.3166 14.9024 19.6834 14.9024 19.2929 15.2929L12.9289 21.6569C12.5384 22.0474 12.5384 22.6805 12.9289 23.0711C13.3195 23.4616 13.9526 23.4616 14.3431 23.0711L20 17.4142L25.6569 23.0711C26.0474 23.4616 26.6805 23.4616 27.0711 23.0711C27.4616 22.6805 27.4616 22.0474 27.0711 21.6569L20.7071 15.2929ZM21 17L21 16L19 16L19 17L21 17Z" fill="white"/>
+                                        </svg>
+                                        <svg class="array_down" xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39" fill="none">
+                                            <ellipse cx="19.5" cy="19.5" rx="19.5" ry="19.5" fill="#2A79C2"/>
+                                            <path d="M18.2929 23.7071C18.6834 24.0976 19.3166 24.0976 19.7071 23.7071L26.0711 17.3431C26.4616 16.9526 26.4616 16.3195 26.0711 15.9289C25.6805 15.5384 25.0474 15.5384 24.6568 15.9289L19 21.5858L13.3431 15.9289C12.9526 15.5384 12.3194 15.5384 11.9289 15.9289C11.5384 16.3195 11.5384 16.9526 11.9289 17.3431L18.2929 23.7071ZM18 22L18 23L20 23L20 22L18 22Z" fill="white"/>
+                                            </svg>
+                                    </button>
+                                </div>
+                                <div class="theme">
+                                    <p class="theme__text">
+                                        Тема 1. Куда движутся IT тренды? Аналитика Gartner, разбор отчетов консалтинговых компаний
+                                    </p>
+                                </div>
+                                <div class="theme">
+                                    <p class="theme__text">
+                                        Тема 2. Рынки Ближнего Востока, Азии, Латинской АмерикиТема                                    </p>
+                                </div>
+                                <div class="theme">
+                                    <p class="theme__text">
+                                        3. Что такое внутренние и внешние инновации? Как искать инновационные идеи?                                    </p>
+                                </div>
+                                <div class="theme">
+                                    <a href="" class="theme__text">9 видео роликов, вебинар с приглашенным экспертом</a>
+                                </div>
+                            </div>
+                            <div class="module__container">
+                                <div class="module">
+                                    <div class="module__header">
+                                        Модуль 7
+                                    </div>
+                                    <p class="module__name">
+                                        Что такое дорожная карта продукта?
+                                    </p>
+                                    <button class="button__array" onclick="openThemes(6)">
+                                        <svg class="array_up" xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39" fill="none">
+                                            <ellipse cx="19.5" cy="19.5" rx="19.5" ry="19.5" transform="rotate(-180 19.5 19.5)" fill="#2A79C2"/>
+                                            <path d="M20.7071 15.2929C20.3166 14.9024 19.6834 14.9024 19.2929 15.2929L12.9289 21.6569C12.5384 22.0474 12.5384 22.6805 12.9289 23.0711C13.3195 23.4616 13.9526 23.4616 14.3431 23.0711L20 17.4142L25.6569 23.0711C26.0474 23.4616 26.6805 23.4616 27.0711 23.0711C27.4616 22.6805 27.4616 22.0474 27.0711 21.6569L20.7071 15.2929ZM21 17L21 16L19 16L19 17L21 17Z" fill="white"/>
+                                        </svg>
+                                        <svg class="array_down" xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39" fill="none">
+                                            <ellipse cx="19.5" cy="19.5" rx="19.5" ry="19.5" fill="#2A79C2"/>
+                                            <path d="M18.2929 23.7071C18.6834 24.0976 19.3166 24.0976 19.7071 23.7071L26.0711 17.3431C26.4616 16.9526 26.4616 16.3195 26.0711 15.9289C25.6805 15.5384 25.0474 15.5384 24.6568 15.9289L19 21.5858L13.3431 15.9289C12.9526 15.5384 12.3194 15.5384 11.9289 15.9289C11.5384 16.3195 11.5384 16.9526 11.9289 17.3431L18.2929 23.7071ZM18 22L18 23L20 23L20 22L18 22Z" fill="white"/>
+                                            </svg>
+                                    </button>
+                                </div>
+                                <div class="theme">
+                                    <p class="theme__text">
+                                        Тема 1. Куда движутся IT тренды? Аналитика Gartner, разбор отчетов консалтинговых компаний
+                                    </p>
+                                </div>
+                                <div class="theme">
+                                    <p class="theme__text">
+                                        Тема 2. Рынки Ближнего Востока, Азии, Латинской АмерикиТема                                    </p>
+                                </div>
+                                <div class="theme">
+                                    <p class="theme__text">
+                                        3. Что такое внутренние и внешние инновации? Как искать инновационные идеи?                                    </p>
+                                </div>
+                                <div class="theme">
+                                    <a href="" class="theme__text">9 видео роликов, вебинар с приглашенным экспертом</a>
+                                </div>
+                            </div>
+                            <div class="module__container">
+                                <div class="module">
+                                    <div class="module__header">
+                                        Модуль 8
+                                    </div>
+                                    <p class="module__name">
+                                        Документы дя международных инвесторов
+                                    </p>
+                                    <button class="button__array" onclick="openThemes(7)">
+                                        <svg class="array_up" xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39" fill="none">
+                                            <ellipse cx="19.5" cy="19.5" rx="19.5" ry="19.5" transform="rotate(-180 19.5 19.5)" fill="#2A79C2"/>
+                                            <path d="M20.7071 15.2929C20.3166 14.9024 19.6834 14.9024 19.2929 15.2929L12.9289 21.6569C12.5384 22.0474 12.5384 22.6805 12.9289 23.0711C13.3195 23.4616 13.9526 23.4616 14.3431 23.0711L20 17.4142L25.6569 23.0711C26.0474 23.4616 26.6805 23.4616 27.0711 23.0711C27.4616 22.6805 27.4616 22.0474 27.0711 21.6569L20.7071 15.2929ZM21 17L21 16L19 16L19 17L21 17Z" fill="white"/>
+                                        </svg>
+                                        <svg class="array_down" xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39" fill="none">
+                                            <ellipse cx="19.5" cy="19.5" rx="19.5" ry="19.5" fill="#2A79C2"/>
+                                            <path d="M18.2929 23.7071C18.6834 24.0976 19.3166 24.0976 19.7071 23.7071L26.0711 17.3431C26.4616 16.9526 26.4616 16.3195 26.0711 15.9289C25.6805 15.5384 25.0474 15.5384 24.6568 15.9289L19 21.5858L13.3431 15.9289C12.9526 15.5384 12.3194 15.5384 11.9289 15.9289C11.5384 16.3195 11.5384 16.9526 11.9289 17.3431L18.2929 23.7071ZM18 22L18 23L20 23L20 22L18 22Z" fill="white"/>
+                                            </svg>
+                                    </button>
+                                </div>
+                                <div class="theme">
+                                    <p class="theme__text">
+                                        Тема 1. Куда движутся IT тренды? Аналитика Gartner, разбор отчетов консалтинговых компаний
+                                    </p>
+                                </div>
+                                <div class="theme">
+                                    <p class="theme__text">
+                                        Тема 2. Рынки Ближнего Востока, Азии, Латинской АмерикиТема                                    </p>
+                                </div>
+                                <div class="theme">
+                                    <p class="theme__text">
+                                        3. Что такое внутренние и внешние инновации? Как искать инновационные идеи?                                    </p>
+                                </div>
+                                <div class="theme">
+                                    <a href="" class="theme__text">9 видео роликов, вебинар с приглашенным экспертом</a>
+                                </div>
+                            </div>
+                            <div class="module__container">
+                                <div class="module">
+                                    <div class="module__header">
+                                        Модуль 9
+                                    </div>
+                                    <p class="module__name">
+                                        Открытие юридического лица. Возможности для стартапов
+                                    </p>
+                                    <button class="button__array" onclick="openThemes(8)">
+                                        <svg class="array_up" xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39" fill="none">
+                                            <ellipse cx="19.5" cy="19.5" rx="19.5" ry="19.5" transform="rotate(-180 19.5 19.5)" fill="#2A79C2"/>
+                                            <path d="M20.7071 15.2929C20.3166 14.9024 19.6834 14.9024 19.2929 15.2929L12.9289 21.6569C12.5384 22.0474 12.5384 22.6805 12.9289 23.0711C13.3195 23.4616 13.9526 23.4616 14.3431 23.0711L20 17.4142L25.6569 23.0711C26.0474 23.4616 26.6805 23.4616 27.0711 23.0711C27.4616 22.6805 27.4616 22.0474 27.0711 21.6569L20.7071 15.2929ZM21 17L21 16L19 16L19 17L21 17Z" fill="white"/>
+                                        </svg>
+                                        <svg class="array_down" xmlns="http://www.w3.org/2000/svg" width="39" height="39" viewBox="0 0 39 39" fill="none">
+                                            <ellipse cx="19.5" cy="19.5" rx="19.5" ry="19.5" fill="#2A79C2"/>
+                                            <path d="M18.2929 23.7071C18.6834 24.0976 19.3166 24.0976 19.7071 23.7071L26.0711 17.3431C26.4616 16.9526 26.4616 16.3195 26.0711 15.9289C25.6805 15.5384 25.0474 15.5384 24.6568 15.9289L19 21.5858L13.3431 15.9289C12.9526 15.5384 12.3194 15.5384 11.9289 15.9289C11.5384 16.3195 11.5384 16.9526 11.9289 17.3431L18.2929 23.7071ZM18 22L18 23L20 23L20 22L18 22Z" fill="white"/>
+                                            </svg>
+                                    </button>
+                                </div>
+                                <div class="theme">
+                                    <p class="theme__text">
+                                        Тема 1. Куда движутся IT тренды? Аналитика Gartner, разбор отчетов консалтинговых компаний
+                                    </p>
+                                </div>
+                                <div class="theme">
+                                    <p class="theme__text">
+                                        Тема 2. Рынки Ближнего Востока, Азии, Латинской АмерикиТема                                    </p>
+                                </div>
+                                <div class="theme">
+                                    <p class="theme__text">
+                                        3. Что такое внутренние и внешние инновации? Как искать инновационные идеи?                                    </p>
+                                </div>
+                                <div class="theme">
+                                    <a href="" class="theme__text">9 видео роликов, вебинар с приглашенным экспертом</a>
+                                </div>
+                            </div>
+                            <div class="module__container">
+                                <div class="module">
+                                    <div class="module__header">
+                                        Демо день
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="button__akselerator-programm button_blue" onclick="openOrCloseLogin()">
+                            Получить полную программу
+                        </button>
+                    </div>
+                </div>
+            </article>
+            <article class="blue-block">
+                <div class="blue-block__container">
+                    <div class="blue-block__content">
+                        <div class="blue-block__left">
+                            <h5 class="radars__header">
+                                Попадите на радары инвесторов и партнеров
+                            </h5>
+                            <p class="radars__text">
+                                В результате прохождения обучения мы создадим профили вашей компании на всех международных скаутинговых площадках
+                            </p>
+                            <button class="button__radars" onclick="openOrCloseLogin()">
+                                Записаться в акселератор
+                            </button>
+                        </div>
+                        <div class="blue-block__right">
+                            <div class="partner-label">
+                                <img src="./img/partner labels/Снимок экрана 2022-09-08 в 1.50.png" alt="" class="partner-label__img">
+                            </div>
+                            <div class="partner-label">
+                                <img src="./img/partner labels/Снимок экрана 2022-09-08 в 1.50 (1).png" alt="" class="partner-label__img">
+                            </div>
+                            <div class="partner-label">
+                                <img src="./img/partner labels/Dealroom 1.png" alt="" class="partner-label__img">
+                            </div>
+                            <div class="partner-label">
+                                <img src="./img/partner labels/unnamed 1.png" alt="" class="partner-label__img">
+                            </div>
+                            <div class="partner-label">
+                                <img src="./img/partner labels/f6s 3.png" alt="" class="partner-label__img">
+                            </div>
+                            <div class="partner-label">
+                                <img src="./img/partner labels/B1i30JrIEAE3bt1 1.png" alt="" class="partner-label__img">
+                            </div>
+                            <img src="./img/blue-dots.png" alt="" class="background-dots">
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="you-get">
+                <div class="you-get__container">
+                    <div class="you-get__content">
+                        <h2 class="you-get__header">
+                            Что вы получите в результате?
+                        </h2>
+                        <div class="you-get__blocks-container">
+                            <div class="numbered-square numbered-square_you-get">
+                                <div class="numbered-square__number numbered-square__number_you-get">01</div>
+                                <h4 class="numbered-square__header_you-get">Документы по продукту</h4>
+                                <p class="numbered-square__text numbered-square__text_you-get">
+                                    Бизнес план, отчет по анализу рынка, маркетинговый план, unit экономика, список гипотез, проект MVP
+                               </p>
+                            </div>
+                            <div class="numbered-square numbered-square_you-get">
+                                <div class="numbered-square__number numbered-square__number_you-get">02</div>
+                                <h4 class="numbered-square__header_you-get">Обратная связь от рынка</h4>
+                                <p class="numbered-square__text numbered-square__text_you-get">
+                                    Проведение исследования целевой аудитории позволит сформировать Product market fit
+                                </p>
+                            </div>
+                            <div class="numbered-square numbered-square_you-get">
+                                <div class="numbered-square__number numbered-square__number_you-get">03</div>
+                                <h4 class="numbered-square__header_you-get">Продвижение продукта</h4>
+                                <p class="numbered-square__text numbered-square__text_you-get">
+                                    Продвижение продукта через аналитические системы партнеров
+                                </p>
+                            </div>
+                            <div class="numbered-square numbered-square_you-get">
+                                <div class="numbered-square__number numbered-square__number_you-get">04</div>
+                                <h4 class="numbered-square__header_you-get">Подписка на отчеты</h4>
+                                <p class="numbered-square__text numbered-square__text_you-get">
+                                    Подписка на аналитические отчеты по международным рынкам высокотехнологичных сфер
+                                </p>
+                            </div>
+                            <div class="numbered-square numbered-square_you-get">
+                                <div class="numbered-square__number numbered-square__number_you-get">05</div>
+                                <h4 class="numbered-square__header_you-get">Подписка на отчеты</h4>
+                                <p class="numbered-square__text numbered-square__text_you-get">
+                                    Подписка на аналитические отчеты по международным рынкам высокотехнологичных сфер
+                                </p>
+                            </div>
+                            <div class="numbered-square numbered-square_you-get">
+                                <div class="numbered-square__number numbered-square__number_you-get">06</div>
+                                <h4 class="numbered-square__header_you-get">Подписка на отчеты</h4>
+                                <p class="numbered-square__text numbered-square__text_you-get">
+                                    Подписка на аналитические отчеты по международным рынкам высокотехнологичных сфер
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="price">
+                <div class="price__container">
+                    <div class="price__content">
+                        <h2 class="price__header">
+                            Стоимость
+                        </h2>
+                        <div class="price__blocks-container">
+                            <div class="long-card">
+                                <div class="long-card__top">
+                                    
+                                    <svg class="long-card__img" xmlns="http://www.w3.org/2000/svg" width="67" height="76" viewBox="0 0 67 76" fill="none">
+                                        <path d="M31.7378 38.0148C30.8654 35.6398 30.8828 31.0531 31.3888 31.0531C32.8544 31.0531 32.7148 36.5305 31.7378 38.0148ZM31.4411 45.0211C30.0977 48.0195 28.4227 51.4484 26.4859 54.3281C29.6789 53.2891 33.2906 51.775 37.4607 51.0773C35.2448 49.6523 33.1161 47.6039 31.4411 45.0211ZM15.0227 63.5461C15.0227 63.6648 17.3258 62.7445 21.112 57.5789C19.943 58.5141 16.0346 61.2156 15.0227 63.5461ZM43.2708 23.75H67V72.4375C67 74.4117 65.1331 76 62.8125 76H4.1875C1.86693 76 0 74.4117 0 72.4375V3.5625C0 1.58828 1.86693 0 4.1875 0H39.0833V20.1875C39.0833 22.1469 40.9677 23.75 43.2708 23.75ZM41.875 49.2516C38.3854 47.4406 36.0648 44.9469 34.4247 41.2656C35.2099 38.5195 36.4487 34.3484 35.5065 31.7359C34.6865 27.3719 28.1086 27.8023 27.1664 30.7266C26.294 33.443 27.0966 37.2727 28.5797 42.1562C26.5557 46.2531 23.5721 51.7453 21.4609 54.8922C21.4435 54.8922 21.4435 54.907 21.426 54.907C16.6977 56.9703 8.58438 61.5125 11.9169 65.0008C12.894 66.025 14.7086 66.4852 15.6682 66.4852C18.7914 66.4852 21.8971 63.8133 26.3289 57.3117C30.8305 56.05 35.7682 54.4766 40.1128 53.868C43.899 55.6195 48.3307 56.7625 51.2794 56.7625C56.3742 56.7625 56.7232 52.0125 54.7167 50.3203C52.2914 48.3016 45.2424 48.8805 41.875 49.2516ZM65.7786 15.5859L48.6797 1.03906C47.8945 0.371094 46.8302 0 45.7135 0H44.6667V19H67V18.0945C67 17.1594 66.5638 16.2539 65.7786 15.5859ZM52.8497 53.482C53.5651 53.0812 52.4135 51.7156 45.382 52.1461C51.8552 54.4914 52.8497 53.482 52.8497 53.482Z" fill="url(#paint0_linear_1_3451)"/>
+                                        <defs>
+                                        <linearGradient id="paint0_linear_1_3451" x1="33.5" y1="2.34332e-06" x2="102.626" y2="82.9996" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#8BD7DC"/>
+                                        <stop offset="1" stop-color="#1246A9"/>
+                                        </linearGradient>
+                                        </defs>
+                                    </svg>
+                                    <h4 class="long-card__top-header">
+                                        Анализ международных <br> рынков
+                                    </h4>
+                                </div>
+                                <div class="long-card__middle">
+                                    <h4 class="long-card__middle-header">
+                                        Что входит в отчет?
+                                    </h4>
+                                    <ol class="long-card__list">
+                                        <li class="long-card__list-element">
+                                            Анализ конкурентов
+                                        </li>
+                                        <li class="long-card__list-element">
+                                            Анализ инвесторов
+                                        </li>
+                                        <li class="long-card__list-element">
+                                            Размеры рынка (TAM,SAM,SOM)
+                                        </li>
+                                        <li class="long-card__list-element">
+                                            Анализ СМИ
+                                        </li>
+                                        <li class="long-card__list-element">
+                                            Анализ запрос в сети интернет
+                                        </li>
+                                    </ol>
+                                </div>
+                                <div class="long-card__data">
+                                    <h4 class="long-card__header">
+                                        Готовность
+                                    </h4>
+                                    <p class="long-card__value">
+                                        7 раб. дней
+                                    </p>
+                                </div>
+                                <div class="long-card__data">
+                                    <h4 class="long-card__header">
+                                        Язык
+                                    </h4>
+                                    <p class="long-card__value">
+                                        рус. / англ.
+                                    </p>
+                                </div>
+                                <div class="long-card__data">
+                                    <h4 class="long-card__header">
+                                        Стоимость
+                                    </h4>
+                                    <p class="long-card__value_price">
+                                        $1 000
+                                    </p>
+                                </div>
+                                <button class="button__long-card button_blue" onclick="openOrCloseLogin()">
+                                    Оставить заявку
+                                </button>
+                            </div>
+                            <div class="long-card">
+                                <div class="long-card__top">
+                                    
+                                    <svg class="long-card__img" xmlns="http://www.w3.org/2000/svg" width="102" height="76" viewBox="0 0 102 76" fill="none">
+                                        <path d="M81.6242 28.4307L80.3172 30.5605C79.839 31.3499 78.8189 31.6775 77.9104 31.3648C76.0297 30.7094 74.3083 29.7711 72.7941 28.5945C72.0609 28.0285 71.8696 27.0306 72.3478 26.2561L73.6548 24.1263C72.555 22.9348 71.6943 21.5497 71.1205 20.0454H68.4906C67.5343 20.0454 66.7054 19.4049 66.5461 18.5113C66.2273 16.724 66.2113 14.8474 66.5461 12.9857C66.7054 12.092 67.5343 11.4367 68.4906 11.4367H71.1205C71.6943 9.9324 72.555 8.54727 73.6548 7.35575L72.3478 5.22592C71.8696 4.45144 72.045 3.45355 72.7941 2.88758C74.3083 1.71096 76.0456 0.77264 77.9104 0.117307C78.8189 -0.195465 79.839 0.132201 80.3172 0.921579L81.6242 3.05141C83.2978 2.76843 85.0032 2.76843 86.6768 3.05141L87.9838 0.921579C88.4619 0.132201 89.482 -0.195465 90.3905 0.117307C92.2713 0.77264 93.9927 1.71096 95.5069 2.88758C96.2401 3.45355 96.4313 4.45144 95.9532 5.22592L94.6462 7.35575C95.746 8.54727 96.6067 9.9324 97.1805 11.4367H99.8104C100.767 11.4367 101.596 12.0771 101.755 12.9708C102.074 14.758 102.09 16.6347 101.755 18.4964C101.596 19.39 100.767 20.0454 99.8104 20.0454H97.1805C96.6067 21.5497 95.746 22.9348 94.6462 24.1263L95.9532 26.2561C96.4313 27.0306 96.256 28.0285 95.5069 28.5945C93.9927 29.7711 92.2554 30.7094 90.3905 31.3648C89.482 31.6775 88.4619 31.3499 87.9838 30.5605L86.6768 28.4307C85.0191 28.7136 83.2978 28.7136 81.6242 28.4307ZM79.9506 19.673C86.0871 24.0816 93.0842 17.5432 88.3663 11.809C82.2299 7.38554 75.2327 13.9389 79.9506 19.673ZM61.5731 42.5948L66.9445 45.097C68.5544 45.9608 69.2557 47.7928 68.6181 49.4311C67.1995 53.0354 64.4103 56.3419 61.8282 59.2313C60.6487 60.5568 58.6085 60.8845 56.9987 60.0207L52.3605 57.5185C49.8103 59.5589 46.8457 61.1824 43.6101 62.2399V67.2442C43.6101 68.9719 42.2872 70.4613 40.4701 70.7592C36.5492 71.3847 32.437 71.4145 28.3726 70.7592C26.5396 70.4613 25.1848 68.9868 25.1848 67.2442V62.2399C21.9492 61.1675 18.9846 59.5589 16.4344 57.5185L11.7962 60.0058C10.2023 60.8696 8.14623 60.542 6.96676 59.2164C4.38467 56.327 1.65913 53.0205 0.240579 49.4311C-0.396974 47.8076 0.304334 45.9757 1.91415 45.097L7.22178 42.5948C6.60017 39.4819 6.60017 36.2798 7.22178 33.152L1.91415 30.635C0.304334 29.7711 -0.412913 27.9392 0.240579 26.3157C1.65913 22.7114 4.38467 19.4049 6.96676 16.5155C8.14623 15.19 10.1864 14.8623 11.7962 15.7261L16.4344 18.2283C18.9846 16.1878 21.9492 14.5644 25.1848 13.5069V8.48769C25.1848 6.77489 26.4918 5.2855 28.3088 4.98762C32.2298 4.36207 36.3579 4.33229 40.4223 4.97273C42.2553 5.2706 43.6101 6.7451 43.6101 8.48769V13.492C46.8457 14.5644 49.8103 16.173 52.3605 18.2134L56.9987 15.7112C58.5926 14.8474 60.6487 15.1751 61.8282 16.5006C64.4103 19.39 67.1199 22.6965 68.5384 26.3008C69.176 27.9243 68.5544 29.7562 66.9445 30.635L61.5731 33.1371C62.1948 36.2649 62.1948 39.467 61.5731 42.5948ZM42.8291 45.7374C52.2649 34.2691 38.2547 21.1773 25.9818 29.9945C16.546 41.4628 30.5562 54.5546 42.8291 45.7374ZM81.6242 72.9486L80.3172 75.0784C79.839 75.8678 78.8189 76.1955 77.9104 75.8827C76.0297 75.2274 74.3083 74.289 72.7941 73.1124C72.0609 72.5464 71.8696 71.5486 72.3478 70.7741L73.6548 68.6442C72.555 67.4527 71.6943 66.0676 71.1205 64.5633H68.4906C67.5343 64.5633 66.7054 63.9229 66.5461 63.0292C66.2273 61.242 66.2113 59.3653 66.5461 57.5036C66.7054 56.61 67.5343 55.9546 68.4906 55.9546H71.1205C71.6943 54.4503 72.555 53.0652 73.6548 51.8737L72.3478 49.7439C71.8696 48.9694 72.045 47.9715 72.7941 47.4055C74.3083 46.2289 76.0456 45.2906 77.9104 44.6352C78.8189 44.3225 79.839 44.6501 80.3172 45.4395L81.6242 47.5693C83.2978 47.2864 85.0032 47.2864 86.6768 47.5693L87.9838 45.4395C88.4619 44.6501 89.482 44.3225 90.3905 44.6352C92.2713 45.2906 93.9927 46.2289 95.5069 47.4055C96.2401 47.9715 96.4313 48.9694 95.9532 49.7439L94.6462 51.8737C95.746 53.0652 96.6067 54.4503 97.1805 55.9546H99.8104C100.767 55.9546 101.596 56.5951 101.755 57.4887C102.074 59.276 102.09 61.1526 101.755 63.0143C101.596 63.908 100.767 64.5633 99.8104 64.5633H97.1805C96.6067 66.0676 95.746 67.4527 94.6462 68.6442L95.9532 70.7741C96.4313 71.5486 96.256 72.5464 95.5069 73.1124C93.9927 74.289 92.2554 75.2274 90.3905 75.8827C89.482 76.1955 88.4619 75.8678 87.9838 75.0784L86.6768 72.9486C85.0191 73.2316 83.2978 73.2316 81.6242 72.9486ZM79.9506 64.1761C86.0871 68.5847 93.0842 62.0462 88.3663 56.3121C82.2299 51.9035 75.2327 58.4419 79.9506 64.1761Z" fill="url(#paint0_linear_1_3454)"/>
+                                        <defs>
+                                        <linearGradient id="paint0_linear_1_3454" x1="51" y1="2.34332e-06" x2="110.188" y2="108.192" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#8BD7DC"/>
+                                        <stop offset="1" stop-color="#1246A9"/>
+                                        </linearGradient>
+                                        </defs>
+                                        </svg>
+                                    <h4 class="long-card__top-header">
+                                        Упаковка стартапа <br> под локальные рынки
+                                    </h4>
+                                </div>
+                                <div class="long-card__middle">
+                                    <h4 class="long-card__middle-header">
+                                        Что входит в услугу?
+                                    </h4>
+                                    <ol class="long-card__list">
+                                        <li class="long-card__list-element">
+                                            Анализ локальных рынков
+                                        </li>
+                                        <li class="long-card__list-element">
+                                            Бизнес план
+                                        </li>
+                                        <li class="long-card__list-element">
+                                            Питч презентация
+                                        </li>
+                                        <li class="long-card__list-element">
+                                            Финансовый план 
+                                        </li>
+                                        <li class="long-card__list-element">
+                                            Расчет юнит экономики
+                                        </li>
+                                        <li class="long-card__list-element">
+                                            Проведение каст дева
+                                        </li>
+                                    </ol>
+                                </div>
+                                <div class="long-card__data">
+                                    <h4 class="long-card__header">
+                                        Готовность
+                                    </h4>
+                                    <p class="long-card__value">
+                                        7 раб. дней
+                                    </p>
+                                </div>
+                                <div class="long-card__data">
+                                    <h4 class="long-card__header">
+                                        Язык
+                                    </h4>
+                                    <p class="long-card__value">
+                                        рус. / англ.
+                                    </p>
+                                </div>
+                                <div class="long-card__data">
+                                    <h4 class="long-card__header">
+                                        Стоимость
+                                    </h4>
+                                    <p class="long-card__value_price">
+                                        $1 000
+                                    </p>
+                                </div>
+                                <button class="button__long-card button_blue" onclick="openOrCloseLogin()">
+                                    Оставить заявку
+                                </button>
+                            </div>
+                            <div class="long-card">
+                                <div class="long-card__top">
+                                    
+                                    <svg class="long-card__img" xmlns="http://www.w3.org/2000/svg" width="80" height="71" viewBox="0 0 80 71" fill="none">
+                                        <path d="M78.9262 2.6486C78.8258 2.23362 78.5924 1.85322 78.2542 1.5531C77.9159 1.25298 77.4872 1.04593 77.0195 0.956822C71.9869 0 68.0499 0 64.1269 0C47.9976 0 38.3231 7.65458 31.104 17.7498H14.8184C13.4276 17.7508 12.0644 18.0949 10.8812 18.7435C9.69806 19.3922 8.74142 20.3199 8.11815 21.4231L0.3942 35.1237C0.108956 35.6312 -0.0253771 36.195 0.00395089 36.7616C0.0332788 37.3281 0.225295 37.8786 0.561775 38.3608C0.898255 38.843 1.36804 39.2409 1.92653 39.5167C2.48503 39.7926 3.11371 39.9372 3.75292 39.9369H19.9713L16.4595 43.0529C15.5218 43.885 14.995 45.0135 14.995 46.1903C14.995 47.367 15.5218 48.4955 16.4595 49.3277L24.4147 56.3874C24.8791 56.7995 25.4305 57.1265 26.0374 57.3495C26.6443 57.5726 27.2947 57.6874 27.9516 57.6874C28.6085 57.6874 29.2589 57.5726 29.8658 57.3495C30.4727 57.1265 31.0241 56.7995 31.4885 56.3874L35.0004 53.2714V67.6709C35.0002 68.2379 35.1632 68.7955 35.4741 69.2908C35.7849 69.7861 36.2332 70.2028 36.7764 70.5013C37.3197 70.7998 37.9399 70.9703 38.5782 70.9965C39.2165 71.0226 39.8517 70.9037 40.4237 70.6509L55.8497 63.802C57.0951 63.2501 58.1424 62.401 58.8741 61.3501C59.6057 60.2993 59.9926 59.0883 59.9915 57.8531V43.3746C71.3367 36.9541 79.9968 28.3427 79.9968 14.1027C80.0125 10.6082 80.0125 7.11377 78.9262 2.6486ZM60.0071 23.2965C58.7706 23.2965 57.5619 22.9712 56.5338 22.3617C55.5058 21.7523 54.7045 20.886 54.2313 19.8724C53.7581 18.8589 53.6343 17.7436 53.8755 16.6676C54.1168 15.5917 54.7122 14.6033 55.5865 13.8276C56.4608 13.0518 57.5747 12.5236 58.7874 12.3095C60.0002 12.0955 61.2572 12.2054 62.3995 12.6252C63.5419 13.045 64.5182 13.7559 65.2052 14.6681C65.8921 15.5803 66.2588 16.6527 66.2588 17.7498C66.2588 19.2209 65.6001 20.6317 64.4277 21.6719C63.2553 22.7122 61.6651 23.2965 60.0071 23.2965Z" fill="url(#paint0_linear_1_3457)"/>
+                                        <defs>
+                                        <linearGradient id="paint0_linear_1_3457" x1="40" y1="2.18915e-06" x2="100.068" y2="92.1818" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#8BD7DC"/>
+                                        <stop offset="1" stop-color="#1246A9"/>
+                                        </linearGradient>
+                                        </defs>
+                                        </svg>
+                                    <h4 class="long-card__top-header">
+                                        Акселератор <br> вашего бизнеса
+                                    </h4>
+                                </div>
+                                <div class="long-card__middle">
+                                    <h4 class="long-card__middle-header">
+                                        Что входит в акселератор?
+                                    </h4>
+                                    <ol class="long-card__list">
+                                        <li class="long-card__list-element">
+                                            Онлайн доступ к курсам
+                                        </li>
+                                        <li class="long-card__list-element">
+                                            Документы для бизнеса
+                                        </li>
+                                        <li class="long-card__list-element">
+                                            Питч презентация
+                                        </li>
+                                        <li class="long-card__list-element">
+                                            Демо день
+                                        </li>
+                                        <li class="long-card__list-element">
+                                            Провдижение по результатам
+                                        </li>
+                                    </ol>
+                                </div>
+                                <div class="long-card__data">
+                                    <h4 class="long-card__header">
+                                        Готовность
+                                    </h4>
+                                    <p class="long-card__value">
+                                        7 раб. дней
+                                    </p>
+                                </div>
+                                <div class="long-card__data">
+                                    <h4 class="long-card__header">
+                                        Язык
+                                    </h4>
+                                    <p class="long-card__value">
+                                        рус. / англ.
+                                    </p>
+                                </div>
+                                <div class="long-card__data">
+                                    <h4 class="long-card__header">
+                                        Стоимость
+                                    </h4>
+                                    <p class="long-card__value_price">
+                                        $1 000
+                                    </p>
+                                </div>
+                                <button class="button__long-card button_blue" onclick="openOrCloseLogin()">
+                                    Оставить заявку
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="who-we-are">
+                <div class="who-we-are__container">
+                    <div class="who-we-are__content">
+                        <h2 class="who-we-are__header">
+                            Кто мы?
+                        </h2>
+                        <div class="left-picture-block">
+                            <img src="./img/who we are/graphics.png" alt="" class="left-picture-block__img">
+                            <p class="left-picture-block__paragraph">
+                                <strong class="blue-stong">
+                                    INNOMA.VC
+                                </strong> -  Международное аналитическое агентство по запуску IT бизнеса на локальных рынках регионов Азии, Ближнего Востока, Латинской Америки, Африки. <br><br>
+
+                                Наша команда состоит из профессионалов своего дела и основной нашей целью является помощь IT компаниям получить необходимые знания и пакеты документов, чтобы успешно запустить свой продукт на международных рынках.
+                            </p>
+                            <p class="left-picture-block__paragraph_mobile">
+                                <strong class="blue-stong">
+                                    Иннома
+                                </strong> -   международное аналитическое агентство направленное на помощь стартапам в  в поиске инвесторов, партнеров в регионах Ближнего Востока и Юго-Восточной Азии <br><br>
+                                Нашей командой пройдено более 20 акселераторов, бизнес инкубаторов и мы знаем как сделать продукт эффективным для вас
+                            </p>
+                        </div>
+                        <div class="person-presentation">
+                            <img src="./img/who we are/person.png" alt="" class="person-presentation__img">
+                            <div class="person-presentation_text-block">
+                                <p class="person-presentation__text">
+                                    Всем привет! <br> Меня зовут Роман. Последние 6 лет я являюсь частью <br>
+                                    инновационной экосистемы СНГ,  прошел путь от проектного <br>
+                                    менеджера до руководителя продукта по автоматизированному скаутингу и скорингу стартапов. За 6 лет работы я увидел  множество ошибок и отсутствие ориентации акселерационных программ под запросы стартапов. Все акселераторы выполнялись ради акселераторв и выполнения КПЭ. 
+                                </p>
+                                <div class="person-presentation__signature">
+                                    <p class="person-presentation__name">
+                                        Роман Гайн
+                                    </p>
+                                    <p class="person-presentation__position">
+                                        Основатель INNOMA.VC
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="photo-slider">
+                            <img src="./img/who we are/slider-1.png" alt="" class="photo-slider__img">
+                            <img src="./img/who we are/slider-2.png" alt="" class="photo-slider__img">
+                            <img src="./img/who we are/slider-3.png" alt="" class="photo-slider__img">
+                            <img src="./img/who we are/slider-4.png" alt="" class="photo-slider__img">
+                            <img src="./img/who we are/slider-5.png" alt="" class="photo-slider__img">
+                        </div>
+                        
+                    </div>
+                </div>
+            </article>
+            <article class="experts">
+                <div class="experts__container">
+                    <div class="experts__content">
+                        <h2 class="experts__header">
+                            Эксперты и трекеры программы
+                        </h2>
+                        <div class="peron-slider">
+
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="partners">
+                <div class="partners__container">
+                    <div class="partners__content">
+                        <h2 class="partners__header">
+                            Наши партнеры
+                        </h2>
+                        <div class="labels">
+                            <div class="labels__item">
+                                <img src="./img/partner labels/Снимок экрана 2022-09-08 в 1.50 (1).png" alt="" class="labels__img">
+                            </div>
+                            <div class="labels__item">
+                                <img src="./img/partner labels/Dealroom 1.png" alt="" class="labels__img">
+                            </div>
+                            <div class="labels__item">
+                                <img src="./img/partner labels/Снимок экрана 2022-07-01 в 5.07 1.png" alt="" class="labels__img">
+                            </div>
+                            <div class="labels__item">
+                                <img src="./img/partner labels/Снимок экрана 2022-07-01 в 5.09 1.png" alt="" class="labels__img">
+                            </div>
+                            <div class="labels__item">
+                                <img src="./img/partner labels/Снимок экрана 2022-11-19 в 7.52.png" alt="" class="labels__img">
+                            </div>
+                            <div class="labels__item">
+                                <img src="./img/partner labels/png-clipart-in5-tech-entrepreneurship-tecom-group-startup-company-technology-others-miscellaneous-text-removebg-preview 1.png" alt="" class="labels__img">
+                            </div>
+                            <div class="labels__item">
+                                <img src="./img/partner labels/Снимок экрана 2022-11-19 в 7.54.png" alt="" class="labels__img">
+                            </div>
+                            <div class="labels__item">
+                                <img src="./img/partner labels/header-logo 1.png" alt="" class="labels__img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="partner-hook">
+                <div class="shadow_065"></div>
+                <div class="partner-hook__container">
+                    <div class="partner-hook__content">
+                        <h5 class="partner-hook__header">
+                            Мы создаем международное сообщество экспертов и партнеров
+                        </h5>
+                        <p class="partner-hook__text">
+                            Если вы или ваш бизнес может быть полезен IT  командам при выходе на международные рынки,  приглашем вас стать нашим партнером
+                        </p>
+                        <button class="button_partner-hook button_blue" onclick="openOrCloseLogin()">
+                            Стать партнером
+                        </button>
+                    </div>
+                </div>
+            </article>
+            <article class="events">
+                <div class="events__container">
+                    <div class="events__content">
+                        <h2 class="events__header">
+                            Мероприятия и события
+                        </h2>
+                        <div class="events__block">
+                            <a class="events__item">
+                                <img src="./img/events/event-1.png" alt="" class="events-item__logo">
+                                <div class="events-item__text">
+                                    <p class="events-item__text_header">
+                                        Новый отчет по MENA
+                                    </p>
+                                    <p class="events-item__text_text">
+                                        Аналитический отчет по рынкам <br>
+                                        Ближнего Востока (инвесторы, <br>
+                                        объем раундов, ТОП сферы)
+                                    </p>
+                                    <div class="events-item__date">
+                                        22.11.2022
+                                    </div>
+                                </div>
+
+                            </a>
+                            <a class="events__item">
+                                <img src="./img/events/event-2.png" alt="" class="events-item__logo">
+                                <div class="events-item__text">
+                                    <p class="events-item__text_header">
+                                        Вебинар по особенностям <br>
+                                        рынков Ближнего Востока
+                                    </p>
+                                    <p class="events-item__text_text">
+                                        Поговорим с экспертами рынков <br>
+                                        в формате дискуссии
+                                    </p>
+                                    <div class="events-item__date">
+                                        22.11.2022
+                                    </div>
+                                </div>
+
+                            </a>
+                            <a class="events__item">
+                                <img src="./img/events/event-3.png" alt="" class="events-item__logo">
+                                <div class="events-item__text">
+                                    <p class="events-item__text_header">
+                                        Вебинар по особенностям <br>
+                                        рынков Ближнего Востока
+                                    </p>
+                                    <p class="events-item__text_text">
+                                        Поговорим с экспертами рынков <br>
+                                        в формате дискуссии
+                                    </p>
+                                    <div class="events-item__date">
+                                        22.11.2022
+                                    </div>
+                                </div>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="blue-block">
+                <div class="blue-block__container">
+                    <div class="blue-block__content">
+                        <div class="blue-block__left_questions">
+                            <div>
+                                <h5 class="questions__header">
+                                    Остались вопросы?
+                                </h5>
+                                <p class="questions__text">
+                                    Оставьте заявку и наша команда свяжется с вами
+                                </p>
+                            </div>
+                            <div>
+                                <p class="questions__header_text-us">
+                                    Или напишите нам:
+                                </p>
+                                <div class="social-media">
+                                    <a href="" class="social-media__item">
+                                        <div class="white-circle">
+                                            <img src="./img/social media/telegram.png" alt="" class="social-media__img">
+                                        </div>
+                                        <span class="social-media__name">
+                                            Telegram
+                                        </span>
+                                    </a>
+                                    <a href="" class="social-media__item">
+                                        <div class="white-circle">
+                                            <img src="./img/social media/whatsupp.png" alt="" class="social-media__img">
+                                        </div>
+                                        <span class="social-media__name">
+                                            Whatsapp
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blue-block__right_questions">
+                            <div class="registration">
+                                <div class="registration__inputs">
+                                    <input type="text" class="registration__field" required placeholder="Имя">
+                                    <input type="email" class="registration__field" pattern=".+@example\.com" required placeholder="Почта">
+                                    <div class="registration__field">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 14 8" fill="none">
+                                            <path d="M1 1L7 7L13 1" stroke="#1178B2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        <select name="" id="" class="registration__select">
+                                            <option value="971">(971)</option>
+                                            <option value="915">(915)</option>
+                                            <option value="985">(985)</option>
+                                        </select>
+                                        <img src="./img/flags/United-Arab-Emirates.png" alt="" class="registration__flag">
+                                        <input type="tel" class="registration__number" requiredpattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
+                                    </div>
+                                </div>
+                                <button class="button__registration">Оставить заявку</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </main>
+        <footer class="footer">
+            <div class="shadow_078"></div>
+            <div class="footer__container">
+                <div>    
+                    <a href="" class="footer__logo">INNOMA<strong class="footer__logo_blue">.VC</strong></a>
+                    <p class="footer__rights">
+                        Все права защищены
+                    </p>
+                </div>
+                <nav id='1' class="footer__menu menu">
+                    <ul class="menu__list">
+                        <li class="menu__item"><a href="" class="menu__link">Кто мы?</a></li>
+                        <li class="menu__item"><a href="" class="menu__link">Услуги</a></li>
+                        <li class="menu__item"><a href="" class="menu__link">Акселератор</a></li>
+                        <li class="menu__item last-item"><a href="" class="menu__link">Новости</a></li>
+                    </ul>
+                </nav>
+                <div class="footer__copyright">
+                    <p class="footer__copyright-text">
+                        Dubai, Single Business Tower <br> 1503, Business Bay
+                    </p>
+                    <p class="footer__email">
+                        Sales@innoma.vc
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+<script src="./js/index.js"></script>
+</html>
